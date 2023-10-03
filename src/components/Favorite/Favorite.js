@@ -1,13 +1,17 @@
-import styles from './Favorite.module.scss';
 import PageTitle from '../PageTitle/PageTitle';
+import FavoriteCards from '../FavoriteCards/FavoriteCards';
 
 const Favorite = () => {
+    
+
     return (
-        <div className={styles.favorite}>
+        <div>
             <PageTitle>Favorite</PageTitle>
-            <p className={styles.subtitle}>Lorem Ipsum</p>
+            <div>
+                <FavoriteCards />
+            </div>
         </div>
-    );
+    )
 };
 
 export default Favorite;
