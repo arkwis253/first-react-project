@@ -1,11 +1,11 @@
 import styles from './FavoriteCards.module.scss';
 import Card from '../Card/Card';
 import { useSelector } from 'react-redux';
+import { getFavCards } from '../../redux/cardsRedux';
 
 const FavoriteCards = () => {
   const cards = useSelector(state => state.cards);
 
-  const getFavCards = cards => cards.filter(card => card.isFavorite === true);
   const favCards = getFavCards(cards);
 
   return (
